@@ -72,7 +72,7 @@
     }
 
     .vCenterChild {
-        align-items: center;
+        align-item card-img-tops: center;
     }
 
     .logo {
@@ -113,7 +113,7 @@
         </figure>
 
         <div style="text-align: center;">
-            <a href="https://s3-us-west-2.amazonaws.com/kindlebaylanding/resume/Resume+(6).pdf"
+            <a href="KevinDeAsisResume.pdf"
                type="button" class="btn btn-lg btn-primary" disabled>
                 Get My Resume
             </a>
@@ -153,7 +153,7 @@
                     <i style="font-size:4em;color:#007bb6" class="fa fa-linkedin-square fa-3x"
                        style="color: #00AB6C;"></i>
                 </a>
-                <a href="https://angel.co/kevin-de-asis" style="margin-top: 15px">
+                <a href="https://angel.co/kevin-de-asis" style="margin-top: 5px">
                     <i style="color: white;" class="fa fa-angellist fa-4x" style="font-size:4em;color: #00AB6C;"></i>
                 </a>
                 <a href="https://github.com/kevindeasis">
@@ -162,6 +162,10 @@
                 <a href="https://news.ycombinator.com/user?id=kevindeasis">
                     <i style="font-size:4em;color:rgb(255,102,0)" class="fa fa-hacker-news fa-3x"
                        style="color: #00AB6C;"></i>
+                </a>
+
+                <a href="https://www.behance.net/kevindeasis">
+                    <i style="font-size:4em;color:#1769ff" class="fa fa-behance fa-3x" aria-hidden="true"></i>
                 </a>
 
             </div>
@@ -173,28 +177,52 @@
 
 
 <div class="carousel" style="padding:40px">
-    <div>
-        <div class="your-class selector1">
-            <a class="item " href="img/portfolio/a.jpg" data-lightbox="portfolio" data-title="My caption1">
-                <img src="img/portfolio/a.jpg" style="width:170px;height: 170px;">
+    <h5 style="color:white;text-align: center;margin-bottom: 30px;"> Some of my work:</h5>
+    <div class="card-columns">
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/a.jpg" data-lightbox="portfolio" data-title="My caption1">
+                <img src="img/portfolio/a.jpg" style="width:100%;height:auto;">
             </a>
-            <a class="item " href="img/portfolio/b.png" data-lightbox="portfolio" data-title="My caption2">
-                <img src="img/portfolio/b.png" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/b.png" data-lightbox="portfolio" data-title="My caption2">
+                <img src="img/portfolio/b.png" style="width:100%;height: auto;">
             </a>
-            <a class="item " href="img/portfolio/c.png" data-lightbox="portfolio" data-title="My caption3">
-                <img src="img/portfolio/c.png" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/c.png" data-lightbox="portfolio" data-title="My caption3">
+                <img src="img/portfolio/c.png" style="width:100%;height: auto;">
             </a>
-            <a class="item " href="img/portfolio/d.jpg" data-lightbox="portfolio">
-                <img src="img/portfolio/d.jpg" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/d.jpg" data-lightbox="portfolio">
+                <img src="img/portfolio/d.jpg" style="width:100%;height: auto;">
             </a>
-            <a class="item " href="img/portfolio/e.jpg" data-lightbox="portfolio">
-                <img src="img/portfolio/e.jpg" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/e.jpg" data-lightbox="portfolio">
+                <img src="img/portfolio/e.jpg" style="width:100%;height: auto;">
             </a>
-            <a class="item " href="img/portfolio/f.png" data-lightbox="portfolio">
-                <img src="img/portfolio/f.png" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/f.png" data-lightbox="portfolio">
+                <img src="img/portfolio/f.png" style="width:100%;height: auto;">
             </a>
-            <a class="item " href="img/portfolio/g.png" data-lightbox="portfolio">
-                <img src="img/portfolio/g.png" style="width:170px;height: 170px;">
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="img/portfolio/g.png" data-lightbox="portfolio">
+                <img src="img/portfolio/g.png" style="width:100%;height: auto;">
+            </a>
+        </div>
+        <div class="card">
+            <a class="item card-img-top " href="portfolioDesignFuture.jpg" data-lightbox="portfolio">
+                <img src="portfolioDesignFuture.jpg" style="width:100%;height: auto;">
+            </a>
+        </div>
+
+        <div class="card">
+            <a class="item card-img-top " href="portfolioDesignFuture.jpg" data-lightbox="portfolio">
+                <img src="portfolioBefore.png" style="width:100%;height: auto;">
             </a>
         </div>
     </div>
@@ -204,34 +232,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
         integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
-
-<script>
-
-    $(document).ready(function () {
-        $('.selector1').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: true,
-            lazyLoad: 'ondemand',
-            adaptiveHeight: true,
-            responsive: [
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-
-    });
-
-</script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script>
@@ -241,7 +241,7 @@
             'resizeDuration': 200,
             'wrapAround': true
         })
-    }
+    })
 </script>
 
 </body>
